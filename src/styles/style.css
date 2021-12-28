@@ -215,7 +215,7 @@ footer a {
   margin-bottom: 40px;
 
   color: var(--primary-dark);
-  font-size: 64px;
+  font-size: 52px;
   font-family: 'Neucha', cursive;
   line-height: 1;
 }
@@ -224,13 +224,15 @@ footer a {
   margin: 0;
 }
 
+.card p {
+  margin-bottom: 0;
+}
+
 .contact-info a {
   color: var(--blue);
 }
 
 .nav a:hover {
-  height: 280px;
-
   color: var(--white);
 
   background-color: var(--primary);
