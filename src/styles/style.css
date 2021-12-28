@@ -34,6 +34,8 @@ body {
 h1,
 h2,
 h3 {
+  margin: 0 0 30px 0;
+
   font-weight: 100;
   font-family: 'Neucha', cursive;
   line-height: 1.2em;
@@ -62,19 +64,22 @@ a {
 
   max-width: 1110px;
 
-  margin: 100px auto;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .header {
-  position: relative;
-
   overflow: hidden;
 
   background-color: var(--light);
   opacity: 0.9;
 }
 
-.header::before {
+.bg-main {
+  position: relative;
+}
+
+.bg-main::before {
   position: absolute;
   z-index: -2;
 
@@ -92,7 +97,7 @@ a {
 
 .img-main {
   position: absolute;
-  top: -55px;
+  top: 55px;
   right: -270px;
   z-index: -1;
 
@@ -108,7 +113,7 @@ a {
   margin-top: 170px;
 }
 
-.double-section * {
+.double-section > * {
   width: calc(50% - 15px);
   margin-bottom: 0;
 }
@@ -138,10 +143,6 @@ a {
   text-align: center;
 }
 
-.video-section h2 {
-  margin-bottom: 30px;
-}
-
 .video-section p {
   margin-bottom: 30px;
 }
@@ -163,7 +164,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .navigation a {
@@ -171,6 +172,12 @@ a {
 }
 
 .navigation h1 {
+  width: 302px;
+  height: 300px;
+
+  margin: 0 10px;
+  padding-right: 48px;
+
   color: var(--white);
   font-size: 54px;
 }
@@ -184,7 +191,7 @@ a {
 }
 
 .card h2 {
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
 
   color: var(--primary-dark);
   font-size: 64px;
@@ -212,4 +219,60 @@ a {
 
 .navigation a:hover h3 {
   color: var(--white);
+}
+
+.info-section {
+  overflow: hidden;
+
+  background-color: var(--light);
+  opacity: 0.9;
+}
+
+.info-section .under-title {
+  color: var(--translucent-dark);
+  font-size: 24px;
+  font-family: Neucha, cursive;
+}
+
+.info-section .sub-title {
+  font-size: 34px;
+  font-family: Neucha, cursive;
+  line-height: 1.2em;
+}
+
+.info-section img {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.info-section .secondary-title {
+  margin: 100px 0 20px 0;
+  padding: 5px 10px;
+
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'OpenSans', sans-serif;
+  text-transform: uppercase;
+
+  background-color: var(--brown);
+}
+
+.inverse {
+  color: var(--white);
+
+  background-color: var(--brown);
+}
+
+.inverse .double-section {
+  flex-direction: row-reverse;
+}
+
+.inverse .under-title {
+  color: var(--translucent-white);
+}
+
+.inverse .secondary-title {
+  color: var(--brown);
+
+  background-color: var(--white);
 }
