@@ -222,6 +222,10 @@ footer a {
   margin: 0;
 }
 
+.contact-info a {
+  color: var(--blue);
+}
+
 .navigation a:hover {
   height: 280px;
 
@@ -234,6 +238,10 @@ footer a {
   margin: 0;
 
   color: var(--white);
+}
+
+.subscription h3 {
+  margin: 55px;
 }
 
 .navigation a:hover h3 {
@@ -302,10 +310,6 @@ footer a {
   background-color: var(--primary-dark);
 }
 
-.subscription h3 {
-  margin: 55px;
-}
-
 .email-section {
   margin: 40px 55px 40px 0;
 }
@@ -368,8 +372,4 @@ footer a {
 
   font-size: 14px;
   text-align: center;
-}
-
-.contact-info a {
-  color: var(--blue);
 }
