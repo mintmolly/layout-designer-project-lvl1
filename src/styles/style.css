@@ -59,6 +59,22 @@ a {
   cursor: pointer;
 }
 
+button {
+  padding: 0;
+  border: none;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  outline: inherit;
+  cursor: pointer;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
 .container {
   position: relative;
 
@@ -121,8 +137,6 @@ a {
 .btn {
   display: inline-block;
 
-  margin-top: 40px;
-  margin-left: calc(50% + 15px);
   padding: 12px 24px;
 
   color: var(--white);
@@ -133,6 +147,11 @@ a {
 
 .btn:hover {
   background-color: #ea7600;
+}
+
+.header .btn {
+  margin-top: 40px;
+  margin-left: calc(50% + 15px);
 }
 
 .primary-color {
@@ -275,4 +294,82 @@ a {
   color: var(--brown);
 
   background-color: var(--white);
+}
+
+.subscription {
+  color: var(--white);
+
+  background-color: var(--primary-dark);
+}
+
+.subscription h3 {
+  margin: 55px;
+}
+
+.email-section {
+  margin: 40px 55px 40px 0;
+}
+
+.email-form .title {
+  display: block;
+  margin-bottom: 9px;
+
+  font-size: 18px;
+}
+
+.email-section .rules {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.email-form {
+  width: 100%;
+}
+
+.email-form input {
+  width: calc(100% - 70px);
+  height: 50px;
+  margin: 0;
+  padding: 0 0 0 15px;
+
+  border: 0;
+}
+
+.email-form .btn {
+  width: 70px;
+  height: 50px;
+  padding: 0;
+}
+
+.submit {
+  position: relative;
+}
+
+.submit::before {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../../images/send-icon.svg");
+
+  content: '';
+}
+
+.d-flex {
+  display: flex;
+}
+
+.contact-info {
+  margin-top: 60px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--blue);
 }
