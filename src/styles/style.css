@@ -88,7 +88,8 @@ footer a {
   overflow: hidden;
 
   background-color: var(--light);
-  opacity: 0.9;
+
+  z-index: -3;
 }
 
 .bg-main {
@@ -130,12 +131,13 @@ footer a {
 }
 
 .header .description {
-  margin-top: 170px;
+  margin-top: 185px;
 }
 
 .description > * {
   width: calc(50% - 15px);
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .btn {
@@ -256,7 +258,8 @@ footer a {
   overflow: hidden;
 
   background-color: var(--light);
-  opacity: 0.9;
+
+  z-index: -1;
 }
 
 .info-section .under-title {
@@ -301,7 +304,8 @@ footer a {
 }
 
 .inverse .double-section > :last-child {
-  margin: 0 30px 0 0;
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .inverse .under-title {
